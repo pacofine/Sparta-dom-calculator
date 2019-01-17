@@ -19,26 +19,32 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnAdd = document.getElementById('key-5')
     var btnPow2 = document.getElementById('key-6')
     var btnClr = document.getElementById('key-7')
+    var displayValElement = document.getElementById('calc-display-val') // var fot the calculator dispaly
 
-    var displayVal = '0';
+
+    var displayVal = '0'; //the display automatically displays zero
     var pendingVal;
     var evalStringArray = [];
 
-    var calcNumBts = document.getElementsByClassName('calc-btn-num')
-    var calcNumBts = document.getElementsByClassName('calc-btn-opp')
+    //array of the buttons containing numbers 
+    var calcNumBtns = document.getElementsByClassName('calc-btn-num')
+    //array of the buttons containing opperators
+    var calcOopBtns = document.getElementsByClassName('calc-btn-opp')
 
-    var updateDisplayVal = (clickObj) => {
-        btnText = clickObj.target.innerText;
+    //updateDisplayVal is a function
+    var updateDisplayVal = (clickObj) => {  //clickobj = whenever i click a calcNumBtns its going to call updateDisplayVal and is outomatically going to pass the click event to the updateDisplayVal funtion
+       var btnText = clickObj.target.innerText;
 
-        if displayVal === '0')
-         displayVal == '';
+       
+        if(displayVal === '0'); 
+         displayVal == ''; // this clears the display so that when we press a button the value does not add to the current zero
 
          displayVal += btnText;
-            dispValElement.innerText = displayVal;
+          displayValElement.innerText = displayVal; //this should allow me to type into my display
     }
-
-    for (let i = 0; i < calcNumBts.length; i++) {
-        calcNumBts[i].addEventListener('click', updateDisplayVal. false)
+    // a loop through the calcNumBtns array to give each item/element/button a click function
+    for (let i = 0; i < calcNumBtns.length; i++) {
+        calcNumBtns[i].addEventListener('click', updateDisplayVal)
     }
 
 })

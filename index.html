@@ -12,31 +12,31 @@
   <h1>Sparta DOM Calculator</h1>
   <div id="calc">
     <form name="calc">
-      <input type="text" name="answer">
+      <input class="column" id="calc-display-val" type="text" name="answer">
       <br>
-      <input type="button" value="C" class="calc-btn calc-btn-opp" id="keys-8" onClick='toScreen("c")'>
-      <input type="button" value="CE" class="calc-btn calc-btn-opp" id="keys-7" onClick="calc.answer.value = ''">
-      <input type="button" value="x^2" class="calc-btn calc-btn-opp" id="keys-6" onClick="calc.answer.value += '^2'">
-      <input type="button" value="+" class="calc-btn calc-btn-opp" id="keys-5" onClick="calc.answer.value += '+'">
+      <input type="button" value="C" class="calc-btn calc-btn-opp" id="keys-8">
+      <input type="button" value="CE" class="calc-btn calc-btn-opp" id="keys-7">
+      <input type="button" value="x^2" class="calc-btn calc-btn-opp" id="keys-6">
+      <input type="button" value="+" class="calc-btn calc-btn-opp" id="keys-5">
       <br>
-      <input type="button" value="9" class="calc-btn calc-btn-num" id="calc-9" onClick="calc.answer.value += '9'">
-      <input type="button" value="8" class="calc-btn calc-btn-num" id="calc-8" onClick="calc.answer.value += '8'">
-      <input type="button" value="7" class="calc-btn calc-btn-num" id="calc-7" onClick="calc.answer.value += '7'">
-      <input type="button" value="-" class="calc-btn calc-btn-num" id="keys-4" onClick="calc.answer.value += '-'">
+      <input type="button" value="9" class="calc-btn calc-btn-num" id="calc-9">
+      <input type="button" value="8" class="calc-btn calc-btn-num" id="calc-8">
+      <input type="button" value="7" class="calc-btn calc-btn-num" id="calc-7">
+      <input type="button" value="-" class="calc-btn calc-btn-num" id="keys-4">
       <br>
-      <input type="button" value="6" class="calc-btn calc-btn-num" id="calc-6" onClick="calc.answer.value += '6'">
-      <input type="button" value="5" class="calc-btn calc-btn-num" id="calc-5" onClick="calc.answer.value += '5'">
-      <input type="button" value="4" class="calc-btn calc-btn-num" id="calc-4" onClick="calc.answer.value += '4'">
-      <input type="button" value="*" class="calc-btn calc-btn-opp" id="key-3" onClick="calc.answer.value += 'x'">
+      <input type="button" value="6" class="calc-btn calc-btn-num" id="calc-6">
+      <input type="button" value="5" class="calc-btn calc-btn-num" id="calc-5">
+      <input type="button" value="4" class="calc-btn calc-btn-num" id="calc-4">
+      <input type="button" value="*" class="calc-btn calc-btn-opp" id="key-3">
       <br>
-      <input type="button" value="3" class="calc-btn calc-btn-num" id="calc-3" onClick="calc.answer.value += '3'">
-      <input type="button" value="2" class="calc-btn calc-btn-num" id="calc-2" onClick="calc.answer.value += '2'">
-      <input type="button" value="1" class="calc-btn calc-btn-num" id="calc-1" onClick="calc.answer.value += '1'">
-      <input type="button" value="/" class="calc-btn calc-btn-opp" id="keys-2" onClick="calc.answer.value += '/'">
+      <input type="button" value="3" class="calc-btn calc-btn-num" id="calc-3">
+      <input type="button" value="2" class="calc-btn calc-btn-num" id="calc-2">
+      <input type="button" value="1" class="calc-btn calc-btn-num" id="calc-1">
+      <input type="button" value="/" class="calc-btn calc-btn-opp" id="keys-2">
       <br>
-      <input type="button" value="0" class="calc-btn calc-btn-num" id="calc-0" onClick="calc.answer.value += '0'">
-      <input type="button" value="." class="calc-btn calc-btn-opp" id="key-1" onClick="calc.answer.value += '.'">
-      <input type="button" value="=" class="calc-btn calc-btn-opp" id="key-0" onClick='equal("")'>
+      <input type="button" value="0" class="calc-btn calc-btn-num" id="calc-0">
+      <input type="button" value="." class="calc-btn calc-btn-opp" id="key-1">
+      <input type="button" value="=" class="calc-btn calc-btn-opp" id="key-0">
     </form>
     <h3>Calculator</h3>
 </div>
