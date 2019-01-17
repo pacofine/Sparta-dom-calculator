@@ -32,7 +32,7 @@ body{
     font: 20px bold;
   }
   
-  #keys{
+  .calc-btn {
     width: 41px;
     height: 35px;
     margin: 4px;
